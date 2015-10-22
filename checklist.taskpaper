@@ -2,8 +2,7 @@
 solomon stearns
 
 New Mac Setup Process for ARBSF:
-
-00 Power up, etc.:
+  ☐ Assume Google Account is already setup
 
 01 Apple Setup Process (Manual):
   ☐ pick language, country etc.
@@ -23,20 +22,64 @@ New Mac Setup Process for ARBSF:
   ☐ Create desired user account - use adduser script
     ☐ download from URL: curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/OSX-adduser.sh
     ☐ run as sudo ./OSX-adduser
-    ☐ enter desired info
+    ☐ enter required info
 
-  ☐ Set computer name ("User's Mac...")
-  ☐ Enable Remote Login in Sharing Control Panel (for Administrrators)
-  ☐ Enable Remote Management for Admin user
+  ☐ Setup Dock - use dockutil script, as follows:
+    ☐ download from URL - https://raw.githubusercontent.com/dsbu/dockutil/master/scripts/dockutil
+    ☐ chmod 755 dockutil
+    ☐ run dock-setup.sh from URL: bash <(curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/dock-setup.sh) -- need to specify user folder to apply to
 
-04 Login as New User / Setup and Personalization: 
-  ☐ 
-  ☐ ARBSF Gmail Setup
-    ☐ Google Drive Setup
-  ☐ AdobeCC registration
+  ☐ Use System Preferences to:
+    ☐ Sharing Pref Pane:
+      ☐ Set computer name ("User's Mac...")
+      ☐ Enable Remote Login in Sharing Control Panel (for Administrrators)
+      ☐ Enable Remote Management for Admin user with all options checked
+    ☐ Security and Privacy:
+      ☐ Enable User account to unlock Filevault
+
+03 Login as New User / Setup and Personalization: 
+  ☐ Skip Signin with iCloud - will need to setup later
+
+  ☐ System Preferences
+    ☐ Users and Groups - set account avatar
+    ☐ Internet Accounts -> ARBSF Google Account Setup
+    ☐ Set Desktop Photo - download from arbsf.com website, put in Documents, set Desktop
+
+  ☐ Google Drive - Run application from Apps, login with ARBSF google account info
+
+  ☐ Harvest
+    ☐ Open email, find Harvest account email, click on "Accept invite" link - will open Safari
+    ☐ In Safari, Verify user info and set password
+    ☐ Run application from Apps, login with Harvest account info (email, passwd)
+    ☐ Goto "Advanced tab", check "Automatically start Harvest after login"
+
   ☐ Microsoft Office registration
+    ☐ Start Word, follow prompts to establish new Microsoft ID for email address - will generate email
+    ☐ Open email and verify account
+    ☐ Will say "no license" - click "Buy Office", will open Safari
+    ☐ Find "Office 365 Business" (No Email included) - $8.25 user/month w. 1 year commitment - click "Buy Now"
+    ☐ "Want to add this to an existing subscription? Sign In" -> Confirm "Leave Page", enter ARB account info 
+    ☐ Add License, Create new user "user@arbsf.onmicrosoft.com"
+    ☐ Go back to Word, say "Activate", with that new user, enter password
 
-Setup Filevault Encryption:
+  ☐ Adobe DC registration
+    ☐ Goto acrobat.adobe.com -> Buy Now, Select Individual, monthly, pay 1 year ($14.99/month vs. $24.99 / month)
+    ☐ Create Adobe ID for user@arbsf.com
+    ☐ Enter payment info (Amy Amex) and "Place Order"
+    ☐ Download installer - redirects to link with lots of options - find Acrobat Pro DC
+    ☐ Fill out stupid questionaire about use
+    ☐ Finally starts download - go to Downloads and double click "Creative Cloud Installer.dmg"
+    ☐ Opens window, double click on Creative Cloud Installer - will ask for user auth
+    ☐ Eventually Creative Cloud app runs - enter Adobe ID cred
+    ☐ Accept Conditions
+    ☐ Should automatically download / install Acrobat DC
+    ☐ Look for Adobe ID verification email and click link to verify
+    ☐ Go to accounts.adobe.com (may prompt you to "Make Communications more relevant...") - under "account" set amy@arbsf.com as Alternate email for recovery
+
+
+
+04 Log back in as Admin:
+  ☐ Run App Store and check for updates -> Update All
   ☐ setup and record institutional recovery key
 
 
