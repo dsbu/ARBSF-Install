@@ -11,7 +11,7 @@ apps=(
   google-chrome
   firefox
 #Productivity
-  #microsoft-office - this is downloading 2011
+  microsoft-office365
   adobe-air
   adobe-reader
   adobe-creative-cloud
