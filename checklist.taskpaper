@@ -1,0 +1,42 @@
+
+solomon stearns
+
+New Mac Setup Process for ARBSF:
+
+00 Power up, etc.:
+
+01 Apple Setup Process (Manual):
+  ☐ pick language, country etc.
+  ☐ iCloud - Register machine using ARBSF iCloud User
+  ☐ Setup User (not iCloud user) - use Local Admin User info 
+  ☐ chose "set up later" for iCloud Keychain
+  ☐ accept defaults (turn on file vault encryption, allow my icloud account to unlock my desk)
+
+02 Initial Login (as Local Admin):
+  ☐ run app-install.sh (brew) from URL: bash <(curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/app-install.sh)
+    ☐ will run xcrun, and trigger request to install command line dev tools - accept
+    ☐ homebrew install will ask for administrator password - enter local admin passwd
+    ☐ brew cask install will ask for administrator password - enter local admin passwd
+    ☐ CrashPlan install will ask for account info - use existing account - need Crashplan email and password
+    ☐ Adobe AIR install will ask for admin passwd
+
+  ☐ Create desired user account - use adduser script
+    ☐ download from URL: curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/OSX-adduser.sh
+    ☐ run as sudo ./OSX-adduser
+    ☐ enter desired info
+
+  ☐ Set computer name ("User's Mac...")
+  ☐ Enable Remote Login in Sharing Control Panel (for Administrrators)
+  ☐ Enable Remote Management for Admin user
+
+04 Login as New User / Setup and Personalization: 
+  ☐ 
+  ☐ ARBSF Gmail Setup
+    ☐ Google Drive Setup
+  ☐ AdobeCC registration
+  ☐ Microsoft Office registration
+
+Setup Filevault Encryption:
+  ☐ setup and record institutional recovery key
+
+
