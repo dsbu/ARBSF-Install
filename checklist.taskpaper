@@ -23,6 +23,8 @@ New Mac Setup Process for ARBSF:
     ☐ download from URL: curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/OSX-adduser.sh
     ☐ run as sudo ./OSX-adduser
     ☐ enter required info
+    ☐ todo: figure out how to add the new user to filevault in adduser script?
+    ☐ todo: figure out how to pull user info from Google Account? 
 
   ☐ Setup Dock - use dockutil script, as follows:
     ☐ download from URL - https://raw.githubusercontent.com/dsbu/dockutil/master/scripts/dockutil
@@ -40,10 +42,15 @@ New Mac Setup Process for ARBSF:
 03 Login as New User / Setup and Personalization: 
   ☐ Skip Signin with iCloud - will need to setup later
 
+  ☐ todo(s): figure out how to automate (and move up to admin user scripted actions) as many as possible of the below
+
   ☐ System Preferences
     ☐ Users and Groups - set account avatar
+    
     ☐ Internet Accounts -> ARBSF Google Account Setup
-    ☐ Set Desktop Photo - download from arbsf.com website, put in Documents, set Desktop
+    
+    ☐ Set Desktop Photo - download from arbsf.com website, put in Documents, set Desktop Picture
+    ☐ todo: look at https://github.com/grahamgilbert/macscripts/blob/master/set_desktops/set_desktops.py to automate this
 
   ☐ Google Drive - Run application from Apps, login with ARBSF google account info
 
@@ -74,12 +81,11 @@ New Mac Setup Process for ARBSF:
     ☐ Accept Conditions
     ☐ Should automatically download / install Acrobat DC
     ☐ Look for Adobe ID verification email and click link to verify
-    ☐ Go to accounts.adobe.com (may prompt you to "Make Communications more relevant...") - under "account" set amy@arbsf.com as Alternate email for recovery
-
-
+    ☐ Go to accounts.adobe.com (may prompt you to "Make Communications more relevant...") - under "account" set amy as Alternate email for recovery
 
 04 Log back in as Admin:
   ☐ Run App Store and check for updates -> Update All
   ☐ setup and record institutional recovery key
+    ☐ remote in from other machine, run: sudo fdesetup list and copy / paste the recovery keys to a secure store
 
 
