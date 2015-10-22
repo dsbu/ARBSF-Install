@@ -1,5 +1,4 @@
   ./dockutil --add /Applications/Microsoft\ Word.app --after Keynote
-  ./dockutil --add /Applications/Microsoft\ Excel.app  --after Microsoft Word
   ./dockutil --add /Applications/Microsoft\ Excel.app  --after "Microsoft Word"
   ./dockutil --add /Applications/Microsoft\ PowerPoint.app  --after "Microsoft Excel"
   ./dockutil --add /Applications/Microsoft\ OneNote.app  --after "Microsoft Powerpoint"
