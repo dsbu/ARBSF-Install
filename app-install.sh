@@ -27,6 +27,9 @@ apps=(
 #Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+#install cask
+brew install caskroom/cask/brew-cask
+
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
