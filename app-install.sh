@@ -2,7 +2,7 @@
 apps=(
 # Utilities
   alfred
-  bartender
+  #bartender - maybe don't need this
   atom
   cyberduck
   crashplan
