@@ -38,6 +38,9 @@ New Mac Setup Process for ARBSF:
       ☐ Enable Remote Management for Admin user with all options checked
     ☐ Security and Privacy:
       ☐ Enable User account to unlock Filevault
+    ☐ Users and Groups:
+      ☐ Disable Guest user
+      ☐ Login Options -> Display Login window as: Name and Password
 
 03 Login as New User / Setup and Personalization: 
   ☐ Skip Signin with iCloud - will need to setup later
