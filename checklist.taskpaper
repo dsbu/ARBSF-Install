@@ -31,6 +31,12 @@ New Mac Setup Process for ARBSF:
     ☐ chmod 755 dockutil
     ☐ run dock-setup.sh from URL: bash <(curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/dock-setup.sh) -- need to specify user folder to apply to
 
+    # Look at using systemsetup, kickstart and fdsetup commandline to automate some or all of the below:
+    # https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/systemsetup.8.html
+    # https://support.apple.com/en-us/HT201710 , http://ss64.com/osx/kickstart.html
+    # https://derflounder.wordpress.com/2015/02/02/managing-yosemites-filevault-2-with-fdesetup/
+    # http://superuser.com/questions/597338/is-there-any-way-to-allow-guest-account-to-log-in-to-this-computer-via-the-com
+
   ☐ Use System Preferences to:
     ☐ Sharing Pref Pane:
       ☐ Set computer name ("User's Mac...")
