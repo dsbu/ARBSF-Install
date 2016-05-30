@@ -6,5 +6,5 @@
   ./dockutil --add /Applications/Google\ Chrome.app --after Safari
   ./dockutil --add /Applications/Firefox.app --after "Google Chrome"
   ./dockutil --add /Applications/Adobe\ Acrobat\ Reader\ DC.app --after "Microsoft OneNote"
-  ./dockutil --add /Applications/Skim.app --after "Adobe Acrobat Reader DC"
+ # ./dockutil --add /Applications/Skim.app --after "Adobe Acrobat Reader DC"
   
