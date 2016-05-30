@@ -11,7 +11,7 @@ apps=(
   google-chrome
   firefox
 #Productivity
-  #microsoft-office
+  microsoft-office
   adobe-air
   adobe-reader
   #adobe-creative-cloud
