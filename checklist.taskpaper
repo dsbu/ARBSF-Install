@@ -13,7 +13,7 @@ New Mac Setup Process for ARBSF:
 
 02 Initial Login (as Local Admin):
   ☐ run app-install.sh (brew) from URL: bash <(curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/app-install.sh)
-    ☐ will run xcrun, and trigger request to install command line dev tools - accept
+    # no longer true as of 8/20/17 10.12 - will run xcrun, and trigger request to install command line dev tools - accept
     ☐ homebrew install will ask for administrator password - enter local admin passwd
     ☐ brew cask install will ask for administrator password - enter local admin passwd
     ☐ CrashPlan install will ask for account info - use existing account - need Crashplan email and password
@@ -23,19 +23,21 @@ New Mac Setup Process for ARBSF:
     ☐ download from URL: curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/OSX-adduser.sh
     ☐ run as sudo ./OSX-adduser
     ☐ enter required info
+
     ☐ todo: figure out how to add the new user to filevault in adduser script?
     ☐ todo: figure out how to pull user info from Google Account? 
-
-  ☐ Setup Dock - use dockutil script, as follows:
-    ☐ download from URL - https://raw.githubusercontent.com/dsbu/dockutil/master/scripts/dockutil
-    ☐ chmod 755 dockutil
-    ☐ run dock-setup.sh from URL: bash <(curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/dock-setup.sh) -- need to specify user folder to apply to
-
     # Look at using systemsetup, kickstart and fdsetup commandline to automate some or all of the below:
     # https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/systemsetup.8.html
     # https://support.apple.com/en-us/HT201710 , http://ss64.com/osx/kickstart.html
     # https://derflounder.wordpress.com/2015/02/02/managing-yosemites-filevault-2-with-fdesetup/
     # http://superuser.com/questions/597338/is-there-any-way-to-allow-guest-account-to-log-in-to-this-computer-via-the-com
+
+ ☐ Get Serial number from system_profiler:
+   ☐ run: system_profiler SPHardwareDataType and record in pass db
+
+ ☐ Record filevault info
+   ☐ run: sudo fdesetup changerecovery -personal
+   ☐ record personal recovery keys to pass db
 
   ☐ Use System Preferences to:
     ☐ Sharing Pref Pane:
@@ -52,6 +54,11 @@ New Mac Setup Process for ARBSF:
   ☐ Skip Signin with iCloud - will need to setup later
 
   ☐ todo(s): figure out how to automate (and move up to admin user scripted actions) as many as possible of the below
+
+  ☐ Setup Dock - use dockutil script, as follows:
+    ☐ download from URL - https://raw.githubusercontent.com/dsbu/dockutil/master/scripts/dockutil
+    ☐ chmod 755 dockutil
+    ☐ run dock-setup.sh from URL: bash <(curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/dock-setup.sh) -- need to specify user folder to apply to
 
   ☐ System Preferences
     ☐ Users and Groups - set account avatar
