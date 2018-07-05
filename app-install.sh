@@ -17,7 +17,8 @@ apps=(
   #adobe-creative-cloud
   #skim
 # cloud drives
-  google-drive
+#  google-drive
+  google-drive-file-stream
   box-sync
   dropbox
 # Communications
