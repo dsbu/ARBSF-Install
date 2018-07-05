@@ -13,7 +13,7 @@ apps=(
 #Productivity
   #microsoft-office
   adobe-air
-  adobe-reader
+  adobe-acrobat-reader
   #adobe-creative-cloud
   #skim
 # cloud drives
@@ -29,7 +29,8 @@ apps=(
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #install cask
-brew install caskroom/cask/brew-cask
+# Seems out of date as of 7/5/18
+# brew install caskroom/cask/brew-cask
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
