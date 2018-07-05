@@ -3,9 +3,9 @@ apps=(
 # Utilities
   alfred
   #bartender - maybe don't need this
-  atom
+  #atom
   cyberduck
-  crashplan
+  #crashplan
   harvest
 # Browsers
   google-chrome
