@@ -35,10 +35,6 @@ New Mac Setup Process for ARBSF:
  ☐ Get Serial number from system_profiler:
    ☐ run: system_profiler SPHardwareDataType and record in pass db
 
- ☐ Record filevault info
-   ☐ run: sudo fdesetup changerecovery -personal
-   ☐ record personal recovery keys to pass db
-
   ☐ Use System Preferences to:
     ☐ Sharing Pref Pane:
       ☐ Set computer name ("User's Mac...")
@@ -49,6 +45,32 @@ New Mac Setup Process for ARBSF:
     ☐ Users and Groups:
       ☐ Disable Guest user
       ☐ Login Options -> Display Login window as: Name and Password
+
+      sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool NO
+      sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool NO
+
+Filevault:
+  ☐ sudo fdesetup enable -user admin
+  
+  ☐ add user in System Preferences
+
+   ☐ Record filevault info
+     ☐ run: sudo fdesetup changerecovery -personal
+     ☐ record personal recovery keys to pass db
+
+Application Firewall:
+  Firewall Service
+  # Show Status
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate
+
+  # Enable
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+
+  # Disable (Default)
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate off
+
+  Add Application to Firewall
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --add /path/to/file
 
 03 Login as New User / Setup and Personalization: 
   ☐ Skip Signin with iCloud - will need to setup later
