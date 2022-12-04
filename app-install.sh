@@ -16,7 +16,7 @@ apps=(
   rectangle
 #Productivity
   microsoft-office
-  adobe-acrobat-pro
+  # adobe-acrobat-pro
   # adobe-air
   # adobe-acrobat-reader
   #adobe-creative-cloud
