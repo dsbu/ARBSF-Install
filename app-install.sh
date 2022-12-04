@@ -27,7 +27,7 @@ apps=(
   # box-sync
   # dropbox
 # Communications
-  zoomus
+  zoom
 )
 
 
