@@ -31,7 +31,7 @@ apps=(
 )
 
 
-if [! -f /opt/homebrew/bin/bash ]; then
+if [ ! -f /opt/homebrew/bin/bash ]; then
 
 #Install homebrew
 #ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
