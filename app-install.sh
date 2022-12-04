@@ -15,7 +15,7 @@ apps=(
   firefox
   rectangle
 #Productivity
-  #microsoft-office
+  microsoft-office
   # adobe-air
   adobe-acrobat-reader
   #adobe-creative-cloud
