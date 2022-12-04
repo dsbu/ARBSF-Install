@@ -16,7 +16,7 @@ apps=(
   rectangle
 #Productivity
   microsoft-office
-  # adobe-acrobat-pro
+  adobe-acrobat-pro
   # adobe-air
   # adobe-acrobat-reader
   #adobe-creative-cloud
@@ -30,6 +30,7 @@ apps=(
   zoom
 )
 
+if [ ! $(/usr/bin/pgrep oahd) ]; then sudo softwareupdate --install-rosetta; fi
 
 if [ ! -f /opt/homebrew/bin/bash ]; then
 
@@ -44,7 +45,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 fi
 
-#install cask
+#install casks
 # Seems out of date as of 7/5/18
 # brew install caskroom/cask/brew-cask
 

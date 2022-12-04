@@ -15,6 +15,8 @@ New Mac Setup Process for ARBSF:
     ☐ Open Safari, goto https://go.jamfnow.com/rtwpwx, access code PIN, Blueprint "PMs"
     ☐ Download mobileconfig
     ☐ Open System Preferences -> Profiles and Install 
+
+  ☐ for new Apple Silicon machines, install Rosetta: sudo softwareupdate --install-rosetta
   ☐ run app-install.sh (brew) from URL: bash <(curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/app-install.sh)
     # no longer true as of 8/20/17 10.12 - will run xcrun, and trigger request to install command line dev tools - accept
     ☐ homebrew install will ask for administrator password - enter local admin passwd
