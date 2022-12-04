@@ -6,8 +6,8 @@ apps=(
   #bartender - maybe don't need this
   #atom
   cyberduck
-  displaylink
-  flux
+  #displaylink
+  homebrew/cask/flux
   #crashplan
   # harvest
 # Browsers
@@ -17,7 +17,7 @@ apps=(
 #Productivity
   microsoft-office
   # adobe-air
-  adobe-acrobat-reader
+  # adobe-acrobat-reader
   #adobe-creative-cloud
   #skim
 # cloud drives
