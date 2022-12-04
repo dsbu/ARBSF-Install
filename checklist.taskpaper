@@ -1,23 +1,24 @@
 
-solomon stearns
-
 New Mac Setup Process for ARBSF:
   ☐ Assume Google Account is already setup
 
 01 Apple Setup Process (Manual):
   ☐ pick language, country etc.
   ☐ iCloud - Register machine using ARBSF iCloud User
-  ☐ Setup User (not iCloud user) - use Local Admin User info 
+  ☐ Setup User - use Local Admin User info and it@bradac.co iCloud User
   ☐ chose "set up later" for iCloud Keychain
-  ☐ accept defaults (turn on file vault encryption, allow my icloud account to unlock my desk)
+  ☐ accept defaults (turn on file vault encryption, allow my icloud account to unlock my disk)
 
 02 Initial Login (as Local Admin):
+  
+  ☐ enroll with JAMF-Noe cia Open Enrollment: 
+    ☐ Open Safari, goto https://go.jamfnow.com/rtwpwx, access code PIN, Blueprint "PMs"
+    ☐ Download mobileconfig
+    ☐ Open System Preferences -> Profiles and Install 
   ☐ run app-install.sh (brew) from URL: bash <(curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/app-install.sh)
     # no longer true as of 8/20/17 10.12 - will run xcrun, and trigger request to install command line dev tools - accept
     ☐ homebrew install will ask for administrator password - enter local admin passwd
     ☐ brew cask install will ask for administrator password - enter local admin passwd
-    ☐ CrashPlan install will ask for account info - use existing account - need Crashplan email and password
-    ☐ Adobe AIR install will ask for admin passwd
 
   ☐ Create desired user account - use adduser script
     ☐ download from URL: curl https://raw.githubusercontent.com/dsbu/ARBSF-Install/master/OSX-adduser.sh
