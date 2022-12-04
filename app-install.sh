@@ -30,13 +30,19 @@ apps=(
   zoomus
 )
 
+
+if [! -f /opt/homebrew/bin/bash ]; then
+
 #Install homebrew
 #ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# Updated to new homebrew installer script
+# Updated to new homebrew installer script and actions 12/03/2022
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/admin/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/admin/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+fi
 
 #install cask
 # Seems out of date as of 7/5/18
