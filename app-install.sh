@@ -30,13 +30,18 @@ apps=(
 )
 
 #Install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Updated to new homebrew installer script
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/admin/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/admin/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 #install cask
 # Seems out of date as of 7/5/18
 # brew install caskroom/cask/brew-cask
-g
+
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install cask --appdir="/Applications" ${apps[@]}
