@@ -34,7 +34,9 @@ New Mac Setup Process for ARBSF:
     # http://superuser.com/questions/597338/is-there-any-way-to-allow-guest-account-to-log-in-to-this-computer-via-the-com
 
  ☐ Get Serial number from system_profiler:
-   ☐ run: system_profiler SPHardwareDataType and record in pass db
+   #☐ run: system_profiler SPHardwareDataType and record in pass db
+   # Can get this from JAMF now
+   ☐ Copy serial number form JAMF-Now console and record in pass db
 
   ☐ Use System Preferences to:
     ☐ Sharing Pref Pane:
